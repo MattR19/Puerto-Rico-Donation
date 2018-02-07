@@ -1,0 +1,146 @@
+* {margin:0px; padding:0px;font-family: sans-serif;}
+body{background-color: floralwhite;}
+#sidebar{
+	position:fixed; /*stays in place while scrolling*/
+	width:300px;
+	height:100%;
+	background-color: rgb(50,50,50);
+	left: -300px; /*pushes side menu off screen TO START*/
+	transition: all .75s;
+}
+
+html{width:100%;}
+
+#sidebar.active{left:0px; changeBackgroundColor();}
+
+#sidebar a{
+	color:white;
+	list-style: none;
+	font-family: 'Encode Sans', sans-serif;
+	line-height: 80px;
+	letter-spacing: 5px;
+	font-size: 30px;
+	margin:0px 10px;
+	border-bottom: grey 2px solid;
+	border-width: 90%;
+}
+#sidebar a:link, #sidebar a:visited{text-decoration: none; color:white; transition: all .5s;}
+#sidebar a:hover{color:deepskyblue; border-color: deepskyblue; transition: all .5s;}
+#sidebar a:active{color:lime; transition: .01s;}
+
+.open-btn{
+	position: absolute;
+	left:335px;
+	top:-90px;
+	cursor: pointer;
+	background-color: black;
+	height:90px;
+	width:90px;
+}
+
+span{
+	display:block;
+	width:30px;
+	height:3px;
+	background-color: white;
+	color:black;
+	margin-top:5px;
+}
+
+.menuLines{
+	margin-top:33px;
+	margin-left:30px;
+}
+
+header{
+	height:600px;
+	width:100%;
+	background-image: url(https://res.cloudinary.com/sagacity/image/upload/c_crop,h_3324,w_4986,x_0,y_0/c_limit,dpr_1.0,f_auto,fl_lossy,q_80,w_1600/0617-open-road-puerto-rico-san-juan_tatb2c.jpg);
+	background-repeat:no-repeat;
+	background-size: contain;
+	margin-left:125px;
+	margin-top:190px;
+}
+
+h1{
+	color:deepskyblue;
+	font-family:'Rambla';
+	text-align: center;
+	font-size: 70px;
+	letter-spacing: 20px;
+	margin-left: 600px; 
+	width:700px;
+}
+
+#fixHeader{
+width: 100%;
+background-color: rgba(5,5,5,.6);
+height:100px;
+position: fixed;
+top:0px;
+}
+
+.navigationList{
+	float:right;
+	width:820px;
+	height:300px;
+	background-image: url("http://welcome.topuertorico.org/img/puerto-rico-flag.png");
+	background-repeat: no-repeat;
+	padding:10px;
+	margin-right: 150px;
+	list-style: none;
+	font-size: 30px;
+	line-height: 60px;
+	color: darkslategray;
+}
+
+.navigationList a{
+	padding-top: 10px;
+}
+
+.navigationList a:link, .navigationList a:visited{text-decoration: none;color:black;} 
+
+#Description{margin-left: 20px;}
+#Description p{line-height: 25px;margin-left:10px;font-family: Roboto;}
+
+#giveToPR{padding: 50px 20px;}
+
+#giveToPR h2{
+	border:solid 2px black;
+	height:80px;
+	text-align: center;
+	font-size: 60px;
+	padding-top: 10px;
+	letter-spacing: 10px;
+	color:red;
+	background-color: darkslategray;
+	font-family:'Rambla';
+}
+
+#giveToPR p{
+	font-size: 1.05em;
+	line-height: 1.2em;
+	font-family: Roboto;
+	word-spacing: 2px;
+	padding-right:800px;
+}
+
+#giveToPR article{
+		
+		margin-top: 20px;
+		width:100%;
+		padding-top:20px;
+		padding-left:20px;
+
+}
+
+
+#PRflag{
+	padding-left: 1100px;
+}
+
+
+
+
+
+
